@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Fun Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="simon">
+      <div class="buttons">
+        <button class="simon-button simon-1" id="0"></button>
+        <button class="simon-button simon-2" id="1"></button>
+        <button class="simon-button simon-3" id="2"></button>
+        <button class="simon-button simon-4" id="3"></button>
+        <div class="display">
+          <p>
+            <span id="play"><i class="fa fa-circle-o"></i></span>
+            <a href="#" id="link-reset">
+              <span class="score" id="score">00</span>
+              <i class="fa fa-refresh"></i><br>
+            </a>
+            <a href="#" id="link-strict">
+              <span class="strict-icon" id="strict">
+                <i class="fa fa-times"></i>
+              </span>
+              <span class="strict">
+                ⚠️STRICT
+              </span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"></script>
+<script src="script.js"></script>
+</html>
