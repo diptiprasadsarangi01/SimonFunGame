@@ -7,9 +7,12 @@ html {
   height: 100%;
   font-size: 0;
   z-index: -12;
-
 }
 
+body{
+  padding: 0;
+  margin: 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -137,12 +140,38 @@ p {
   background: #ffc371;
 }
 
+
+footer{
+   background-color: #040404;
+   color: #fff;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 2vh;
+   font-size: 16px;
+   font-family: Arial, Helvetica, sans-serif;
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   min-height: 7vh;
+   background: linear-gradient(to top, black, rgba(0, 0, 0, 0.723) , transparent);
+   
+}
+
 @media (orientation: portrait) {
   .simon {
     /* margin: calc(50vh - 40vw) auto 0; */
     width: 80vw;
     height: 80vw;
   }
+}
+
+@media (max-width: 479px) {
+  footer{
+    font-size: 12px;
+  }
+  
 }
 
 @media (min-width: 480px) {
